@@ -1,0 +1,103 @@
+*{ box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+html {
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.horizontal_line {
+    width: 80%;
+    height: 10px;
+    border-bottom: 2px solid grey;
+    line-height: 80%;
+    z-index: 21;
+}
+
+.title{
+    font-size: 32pt;
+    font-weight: normal;
+    font-family: 'creato-medium', sans-serif;
+    line-height: 1.2;
+    color: #374151;
+    padding-left: 2rem;
+    margin-top: 50px;
+    letter-spacing: -0.0125rem;
+    z-index: 20;
+}
+
+.userNameFont{
+    font-size: 0.875rem;
+    color: #3D3D3D;
+    font-weight: normal;
+    font-family: 'Creato Medium', sans-serif;
+        /* assuming 'font-creato-medium' is a specific font */
+    line-height: 1.4;
+        /* equivalent to 'leading-[140%]' */
+    letter-spacing: 0.026rem;
+        /* equivalent to 'tracking-[0.026rem]' */
+}
+
+.canvas {
+    display: inline-flex;
+    display: -webkit-box;/* wkhtmltopdf uses this one */
+    -webkit-box-pack: center;/* wkhtmltopdf uses this one */
+    height: 100%;
+    paddingTop: 1rem;
+    paddingLeft: 2rem;
+    paddingRight: 2rem;
+    width: 100%;
+    display: flex;
+    flexDirection: column;
+    justifyContent: flex-start;
+    gap: 2rem;
+    /*background-color: #eeeeee;*/
+}
+
+.column {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 2rem;
+}
+
+.container {
+    display: inline-flex;
+    height: 100%;
+    width: 50%;
+}
+
+
+.box{
+    width: 50%;
+}
+
+.box .selected {
+    align-self: stretch;
+    margin-left: auto;
+}
+
+.img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.imageContainer {
+    /*width: 50%;*/
+    height: 100%;
+    border-radius: 6px;
+    /* Equivalent to rounded ends based on height */
+    overflow: hidden;
+}
